@@ -1,7 +1,7 @@
 import Foundation
 //Model
 enum Affiliate: String {
-    case popularAffiliate = "Afiliado Popular"
+    case UNBancoDEMentiraAffiliate = "Afiliado UNBancoDEMentira"
     case noAffiliated = "No afiliado"
     case suitAbleForTransfer = "Apto para Traspaso"
     case pendingFromAnoterAfp = "Pendiente de otra afp" 
@@ -14,7 +14,7 @@ enum Affiliate: String {
 
     func getSimbol() -> Simbol {
         switch self {
-        case .popularAffiliate:
+        case .UNBancoDEMentiraAffiliate:
                 return Simbol.upArrow
         case .noAffiliated:
                 return Simbol.minusSing
@@ -137,7 +137,7 @@ public class Person {
 
 class DataRepository {
     static var data: [Person] = [
-      Person(name: "joel",lastName: "alcantara",dateOfBirth: "07/29/1999",phones: ["809-741-0623"], emails: ["Alcantara0729@gamil.com"],accountStateByMail: true,webPageAcces: true,affiliate: Affiliate.popularAffiliate,identificationCard: "402-1234567-2"),
+      Person(name: "joel",lastName: "alcantara",dateOfBirth: "07/29/1999",phones: ["809-741-0623"], emails: ["Alcantara0729@gamil.com"],accountStateByMail: true,webPageAcces: true,affiliate: Affiliate.UNBancoDEMentiraAffiliate,identificationCard: "402-1234567-2"),
       Person(name: "Enmanuel",lastName: "Burgos",dateOfBirth: "07/29/1999",phones: ["809-741-3623"], emails: ["ElFuerte@gmail.com"],accountStateByMail: true,webPageAcces: true,affiliate: Affiliate.noAffiliated,identificationCard: "402-8765432-2"),
       Person(name: "jack",lastName: "pacheco",dateOfBirth: "10/22/1999",phones: ["809-741-1623"], emails: ["jackPacheco@gmail.com"],accountStateByMail: true,webPageAcces: true,affiliate: Affiliate.suitAbleForTransfer,identificationCard: "402-9876543-2"),
       Person(name: "Rolando",lastName: "tara",dateOfBirth: "07/29/1959",phones: ["809-741-2623"], emails: ["enmanuelelContable@gmail.com"],accountStateByMail: true,webPageAcces: true,affiliate: Affiliate.pendingFromAnoterAfp,identificationCard: "402-0987654-2"),
