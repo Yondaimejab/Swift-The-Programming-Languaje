@@ -3,38 +3,8 @@ enum Rank: Int {
     case Two,Three,Four,Five,Six,Seven,Eight,Nine,Ten
     case Jack,Queen,King
     case predeterminado
-    func SimpleDesciption() -> Int{
-        switch self {
-        case .Ace:
-            return self.rawValue
-        case .Two:
-            return self.rawValue
-        case .Three:
-            return self.rawValue
-        case .Four:
-            return self.rawValue
-        case .Five:
-            return self.rawValue
-        case .Six:
-            return self.rawValue
-        case .Seven:
-            return self.rawValue
-        case .Eight:
-            return self.rawValue
-        case .Nine:
-            return self.rawValue
-        case .Ten:
-            return self.rawValue
-        case .Jack:
-            return self.rawValue
-        case .Queen:
-            return self.rawValue
-        case .King:
-            return self.rawValue
-        default:
-            return self.rawValue
-            
-        }
+    func SimpleDesciption() -> Int {
+         return self.rawValue
     }
 }
 
